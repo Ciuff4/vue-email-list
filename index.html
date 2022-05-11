@@ -10,12 +10,13 @@
     <title>Axios</title>
 </head>
 <body>
-    <div id="app">
-        <h1
-        style="text-align: center;">
+    <div id="app" class="container">
+        <h1>
             Scopri quali mail sono disponibili:
         </h1>
-        <button>Scopri</button>
+        <button
+        @click="printEmails"
+        >Scopri</button>
         <ul>
             <li v-for="mail in mails">
                 {{mail}}

@@ -4,12 +4,8 @@ const app= new Vue({
         mails:[]
     },
 
-    mounted(){
-        this.printemails()
-    },
-
     methods:{
-        printemails(){
+        printEmails(){
             for(let i=0;  i < 10; i++){
                 axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
                 .then(risposta =>{
